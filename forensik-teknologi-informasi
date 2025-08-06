@@ -1,0 +1,13 @@
+forensik-teknologi-informasi/
+├── kasus/
+│   ├── kasus-1-disk.img
+│   └── kasus-1-laporan-investigasi.pdf
+├── tools/
+│   ├── script-autopsy.sh
+│   └── volatility-usage.md
+├── laporan/
+│   ├── laporan-akhir.md
+├── referensi/
+│   └── buku-digital-forensik.pdf
+├── README.md
+└── .gitignore
