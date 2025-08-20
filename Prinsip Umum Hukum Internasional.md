@@ -59,3 +59,5 @@
 ---
 
 ⚖️ **Kesimpulan**: Prinsip kedaulatan, yurisdiksi, non-intervensi, dan tanggung jawab negara adalah pondasi utama hubungan antarnegara agar tercipta ketertiban, keadilan, dan perdamaian dunia.
+
+![Prinsip Hukum Internasional]([img/hukum.png](https://tse1.mm.bing.net/th/id/OIP.6PgAR2hEEfEflVnjD6RyTAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3))
