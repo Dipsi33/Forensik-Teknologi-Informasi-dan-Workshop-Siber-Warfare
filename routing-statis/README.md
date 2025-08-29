@@ -79,3 +79,5 @@ end
 ## 🔹 Kesimpulan  
 Dengan konfigurasi routing statis, dua jaringan berbeda dapat saling berkomunikasi melalui router. Routing statis mudah dikonfigurasi, tetapi tidak fleksibel untuk jaringan besar karena setiap perubahan jaringan harus diinput manual.
 
+## 🔹 Dibuat oleh :
+ANDI KURNIAWAN
