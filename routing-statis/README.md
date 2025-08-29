@@ -2,7 +2,7 @@
 # Konfigurasi Routing Statis dengan 2 Router dan 2 PC pada Cisco Packet Tracer
 
 ## 🔹 Topologi Jaringan
-![Topologi](gambar1.png)
+![Alt Text](gambar1.png)
 
 ---
 
