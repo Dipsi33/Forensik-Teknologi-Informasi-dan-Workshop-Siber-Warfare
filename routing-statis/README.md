@@ -1,83 +1,71 @@
-[Laporan_Routing_Statis.md](https://github.com/user-attachments/files/22040561/Laporan_Routing_Statis.md)
-# Konfigurasi Routing Statis dengan 2 Router dan 2 PC pada Cisco Packet Tracer
+[README.md](https://github.com/user-attachments/files/22040837/README.md)
+# Laporan Routing Statis dengan 2 Router
 
-## 🔹 Topologi Jaringan
-[Topologi](gambar1.png)
+## Topologi Jaringan
+Berikut adalah topologi jaringan yang digunakan pada simulasi routing statis menggunakan Cisco Packet Tracer:
 
----
-
-## 🔹 Konfigurasi IP Address  
-**PC1**  
-- IP: 192.168.1.2  
-- Subnet Mask: 255.255.255.0  
-- Gateway: 192.168.1.1  
-
-**R1**  
-- FastEthernet0/0 → 192.168.1.1/24  
-- FastEthernet0/1 → 192.168.2.1/24  
-
-**R2**  
-- FastEthernet0/0 → 192.168.2.2/24  
-- FastEthernet0/1 → 192.168.3.1/24  
-
-**PC2**  
-- IP: 192.168.3.2  
-- Subnet Mask: 255.255.255.0  
-- Gateway: 192.168.3.1  
+![Topologi](img/gambar1.png)
 
 ---
 
-## 🔹 Konfigurasi Routing Statis  
-**Router 1 (R1):**
-```
-conf t
-int fa0/0
- ip address 192.168.1.1 255.255.255.0
- no shut
-int fa0/1
- ip address 192.168.2.1 255.255.255.0
- no shut
-ip route 192.168.3.0 255.255.255.0 192.168.2.2
-end
-```
+## Konfigurasi PC
+### PC 1
+- IP Address: `192.168.1.2`
+- Subnet Mask: `255.255.255.0`
+- Default Gateway: `192.168.1.1`
 
-**Router 2 (R2):**
-```
-conf t
-int fa0/0
- ip address 192.168.2.2 255.255.255.0
- no shut
-int fa0/1
- ip address 192.168.3.1 255.255.255.0
- no shut
-ip route 192.168.1.0 255.255.255.0 192.168.2.1
-end
-```
+![Konfigurasi PC1](img/gambar3.png)
+
+### PC 2
+- IP Address: `192.168.3.2`
+- Subnet Mask: `255.255.255.0`
+- Default Gateway: `192.168.3.1`
+
+![Konfigurasi PC2](img/gambar4.png)
 
 ---
 
-## 🔹 Hasil Uji Coba  
+## Konfigurasi Router
 
-**Ping dari PC1 ke PC2**  
-![Ping PC1](gambar7.png)
+### Router 1 (R1)
+- FastEthernet 0/0: `192.168.1.1/24`
+- FastEthernet 0/1: `192.168.2.1/24`
+- Static Route: `192.168.3.0/24 via 192.168.2.2`
 
-**Ping dari PC2 ke PC1**  
-![Ping PC2](gambar8.png)
+![Router 1](img/gambar5.png)
 
-**Traceroute** (opsional jika dilakukan)  
-![Traceroute](gambar9.png)
+### Router 2 (R2)
+- FastEthernet 0/0: `192.168.3.1/24`
+- FastEthernet 0/1: `192.168.2.2/24`
+- Static Route: `192.168.1.0/24 via 192.168.2.1`
 
----
-
-## 🔹 Analisa  
-- Routing statis berhasil membuat PC1 (192.168.1.2) dapat berkomunikasi dengan PC2 (192.168.3.2) melewati dua router (R1 dan R2).  
-- Setiap router hanya tahu jaringan langsung + static route yang ditambahkan.  
-- Tanpa routing statis, komunikasi antar subnet berbeda tidak mungkin dilakukan.  
+![Router 2](img/gambar6.png)
 
 ---
 
-## 🔹 Kesimpulan  
-Dengan konfigurasi routing statis, dua jaringan berbeda dapat saling berkomunikasi melalui router. Routing statis mudah dikonfigurasi, tetapi tidak fleksibel untuk jaringan besar karena setiap perubahan jaringan harus diinput manual.
+## Pengujian Koneksi
 
-## 🔹 Dibuat oleh :
+### Ping dari PC1 ke PC2
+Hasil pengujian ping dari PC1 ke PC2 berhasil dengan respon yang baik.
+
+![Ping PC1](img/gambar7.png)
+
+### Ping dari PC2 ke PC1
+Hasil pengujian ping dari PC2 ke PC1 berhasil tanpa packet loss.
+
+![Ping PC2](img/gambar8.png)
+
+### Traceroute
+Traceroute dari PC1 ke PC2 menunjukkan jalur komunikasi melalui kedua router.
+
+![Traceroute](img/gambar9.png)
+
+---
+
+## Kesimpulan
+- Routing statis berhasil diterapkan menggunakan 2 router.  
+- PC1 dan PC2 yang berada pada jaringan berbeda dapat saling berkomunikasi melalui static routing.  
+- Dengan konfigurasi ini, komunikasi data berjalan lancar dan stabil.
+
+## Dibuat Oleh
 ANDI KURNIAWAN
