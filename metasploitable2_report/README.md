@@ -6,9 +6,9 @@
 -   **Hostname:** target\
 -   **Command:** `nmap -n -Pn -p- -A target -o hasil_scan.txt`
 
-![gambar1.png](images/gambar1.png)
-![gambar2.png](images/gambar2.png)
-![gambar3.png](images/gambar3.png)
+![gambar1.png](gambar1.png)
+![gambar2.png](gambar2.png)
+![gambar3.png](gambar3.png)
 ------------------------------------------------------------------------
 
 # 🔍 Ringkasan Port Terbuka & Analisis Risiko
