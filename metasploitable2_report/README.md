@@ -12,6 +12,35 @@
 ------------------------------------------------------------------------
 
 # 🔍 Ringkasan Port Terbuka & Analisis Risiko
+| Port    | Status | Layanan    | Deskripsi                                |
+| ------- | ------ | ---------- | ---------------------------------------- |
+| 21      | open   | FTP        | vsftpd 2.3.4 (anonymous login, backdoor) |
+| 22      | open   | SSH        | OpenSSH 4.7p1 (algoritma lama)           |
+| 23      | open   | Telnet     | Tidak terenkripsi                        |
+| 25      | open   | SMTP       | Postfix, VRFY aktif                      |
+| 53      | open   | DNS        | BIND 9.4.2                               |
+| 80      | open   | HTTP       | Apache 2.2.8 + WebDAV                    |
+| 111     | open   | RPCBind    | Pemetaan RPC                             |
+| 139/445 | open   | SMB        | Samba 3.0.20 (signing off)               |
+| 512–514 | open   | RServices  | rlogin, rexec, rsh (tidak aman)          |
+| 1099    | open   | Java RMI   | Rentan RCE                               |
+| 2049    | open   | NFS        | Dapat di-mount tanpa autentikasi         |
+| 2121    | open   | ProFTPD    | Versi lama, RCE                          |
+| 3306    | open   | MySQL      | root tanpa password                      |
+| 3632    | open   | distccd    | Rentan remote shell                      |
+| 5432    | open   | PostgreSQL | Versi lama                               |
+| 5900    | open   | VNC        | Tidak terenkripsi                        |
+| 6000    | open   | X11        | Akses GUI + keylogging                   |
+| 6667    | open   | UnrealIRCd | Backdoor bawaan                          |
+| 7001    | open   | JServ      | Rentan traversal                         |
+| 8009    | open   | AJP13      | Rentan file inclusion                    |
+| 8180    | open   | Tomcat     | Admin lemah                              |
+
+
+
+------------------------------------------------------------------------
+
+🔍 Analisis Kerentanan per Port (Versi Tabel)
 | Port    | Layanan             | Detail Kerentanan                         | Risiko      |
 | ------- | ------------------- | ----------------------------------------- | ----------- |
 | 21      | FTP (vsftpd 2.3.4)  | Anonymous login + backdoor vulnerability  | 🔥 High     |
@@ -35,31 +64,6 @@
 | 8009    | AJP13               | Rentan file inclusion, upload webshell    | 🔥 High     |
 | 8180    | Tomcat              | Login admin lemah, upload WAR shell       | 🔥 High     |
 
-
-------------------------------------------------------------------------
-
-🔍 Analisis Kerentanan per Port (Versi Tabel)
-Port	Layanan	Detail Kerentanan	Risiko
-21	FTP (vsftpd 2.3.4)	Anonymous login + backdoor vulnerability	🔥 High
-22	SSH	Versi lama, algoritma kunci lemah	⚠️ Medium
-23	Telnet	Tidak dienkripsi, mudah disadap	🔥 High
-25	SMTP (Postfix)	VRFY aktif, enumerasi user	⚠️ Medium
-53	DNS (Bind 9.4.2)	Rentan cache poisoning, banyak CVE	⚠️ Medium
-80	HTTP (Apache 2.2.8)	WebDAV aktif, celah upload shell & RCE	🔥 High
-139/445	SMB (Samba 3.0.20)	SMB signing disabled, RCE (CVE-2007/2017)	🚨 Critical
-512–514	RServices	Tidak aman, autentikasi host-based	🔥 High
-1099	Java RMI	Rentan Remote Code Execution	🔥 High
-2049	NFS	Bisa dimount tanpa autentikasi	🔥 High
-2121	ProFTPD 1.3.1	Banyak celah RCE	🔥 High
-3306	MySQL	root tanpa password	🚨 Critical
-3632	distccd	Rentan dieksploitasi untuk remote shell	🔥 High
-5432	PostgreSQL	Versi lama, mudah brute-force	⚠️ Medium
-5900	VNC	Tidak terenkripsi, rentan brute-force	🔥 High
-6000	X11	Screenshot, keylogging tanpa autentikasi	🔥 High
-6667	UnrealIRCd	Backdoor bawaan, RCE	🚨 Critical
-7001	Apache JServ	Rentan directory traversal	⚠️ Medium
-8009	AJP13	Rentan file inclusion, upload webshell	🔥 High
-8180	Tomcat	Login admin lemah, upload WAR shell	🔥 High
 # 🧨 Kerentanan Paling Kritis
 
 ## 1. Remote Code Execution (RCE)
