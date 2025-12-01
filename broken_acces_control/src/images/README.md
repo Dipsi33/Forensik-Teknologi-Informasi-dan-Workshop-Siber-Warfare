@@ -37,7 +37,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 6. Kemudian saya pindahkan list request yang saya amati sebelumnya menuju repeater, kemudian saya send dan pada response terlihat data keranjang yang sudah sesuai dengan apa yang diinputkan sebelumnya.
 
-![list request.png](Image/list request.png)
+![list request.png](request.png)
 ![halaman keranjang.png](Image/halaman keranjang.png)
 
 7. Setelah melihat informasi response di repeater, saya mencoba untuk mengganti data id 7 menjadi 2 untuk melihat apakah terdapat perubahan yang ditampilkan response. Dan ternyata response membrikan informasi berbeda dari sebelumnya yang mana ternyata menunjukkan isi keranjang id 2.
