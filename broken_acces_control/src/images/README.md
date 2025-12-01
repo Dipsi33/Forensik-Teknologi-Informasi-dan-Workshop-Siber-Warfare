@@ -91,7 +91,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 5. Kemudian kita berpindah ke halaman intruder, positions dan melihat data informasi yang ada disana, kemudian klik clear. Ada penambahan beberapa data ketika proses melakukan clear data.
 
-![password dummy.png](password dummy.png)
+![password dummy.png](dummy.png)
 ![login password.png](password.png)
 
 6. Kemudian klik add, yang mana dalam hal ini akan membuat data email memiliki tambahan sign dollar didepannya. Hal ini membuat adanya perubahan yang ada.
