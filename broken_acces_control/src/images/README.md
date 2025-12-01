@@ -22,7 +22,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
  
 3. Kemudian menuju halaman keranjang untuk dapat melihat yang telah ditambahkan yaitu aple juice dan apple pomance masing masing 1 buah.
 
-![halaman keranjang.png](halaman keranjang.png)
+![halaman keranjang.png](keranjang.png)
 
 4. Kemudian disini saya membuka halaman proxy di dalam http history untuk melihat track http history. Terdapat informasi host, method, url, status, length dan informasi pendukung lainnya.
 
