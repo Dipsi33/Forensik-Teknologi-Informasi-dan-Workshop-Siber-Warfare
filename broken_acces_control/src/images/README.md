@@ -26,7 +26,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 4. Kemudian disini saya membuka halaman proxy di dalam http history untuk melihat track http history. Terdapat informasi host, method, url, status, length dan informasi pendukung lainnya.
 
-![track http history.png](Image/track http history.png)
+![track http history.png](history.png)
 
 5. Kemudian setelah itu saya pilih http history yang memiliki params
  json dengan get /rest/basket/7. Kemudian saya lihat mengenai request
