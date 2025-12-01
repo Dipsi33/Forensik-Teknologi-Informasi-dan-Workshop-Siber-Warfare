@@ -14,11 +14,11 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 1. Setelah melakukan pengaksesan localhost 3000 di terminal dan mempersiapkan aplikasi burpsuite di sini, saya melakukan login dengan menggunakan akun yang sudah di daftarkan sebelumnya.           
 
-![login.png](Image/login.png)
+![login.png](login.png)
 
 2. Kemudian setelah melakukan proses login disini akan di arahkan ke halaman dashboard untuk dapat memilih beberapa item dan nantinya akan disimpan ke keranjang.
 
-![halaman dashboard.png](Image/halaman dashboard.png)
+![halaman dashboard.png](halaman dashboard.png)
  
 3. Kemudian menuju halaman keranjang untuk dapat melihat yang telah ditambahkan yaitu aple juice dan apple pomance masing masing 1 buah.
 
