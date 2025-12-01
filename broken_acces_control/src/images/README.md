@@ -69,7 +69,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 13. Disini saya sudah berhasil untuk melakukan challenge melihat keranjang orang lain.
 
-![berhasil.png](Image/berhasil.png)
+![berhasil.png](berhasil.png)
 
 ## Percobaan : Login Admin
 
@@ -86,7 +86,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 ![login intercept on.png](Image/login intercept on.png)
 4. Kemudian setelah melihat informasi tersebut, saya menggunakan ikon yang dikotaki warna merah untuk melakukan pengiriman menuju intruder, positions.
 
-![clear.png](Image/clear.png)
+![clear.png](clear.png)
 ![login password.png](Image/login password.png)
 
 5. Kemudian kita berpindah ke halaman intruder, positions dan melihat data informasi yang ada disana, kemudian klik clear. Ada penambahan beberapa data ketika proses melakukan clear data.
