@@ -33,7 +33,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
  dan response yang tertampil di halaman tersebut. Dimana response
  berisi informasi isi keranjang yang telah saya pilih sebelumnya.
 
-![params  json dengan get-rest-basket-7.png](Image/params json dengan get-rest-basket-7.png) 
+![params  json dengan get-rest-basket-7.png](7.png) 
 
 6. Kemudian saya pindahkan list request yang saya amati sebelumnya menuju repeater, kemudian saya send dan pada response terlihat data keranjang yang sudah sesuai dengan apa yang diinputkan sebelumnya.
 
