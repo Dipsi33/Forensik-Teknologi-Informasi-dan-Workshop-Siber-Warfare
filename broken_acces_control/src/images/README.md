@@ -42,7 +42,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 7. Setelah melihat informasi response di repeater, saya mencoba untuk mengganti data id 7 menjadi 2 untuk melihat apakah terdapat perubahan yang ditampilkan response. Dan ternyata response membrikan informasi berbeda dari sebelumnya yang mana ternyata menunjukkan isi keranjang id 2.
 
- ![ganti id 7 menjadi id2.png](Image/ganti%20id%207%20menjadi%20id2.png)
+ ![ganti id 7 menjadi id2.png](Image/ganti id 7 menjadi id2.png)
 
 8. Kemudian disini saya akan menggunakan fitur intercept untuk menampilkan data keranjang user lain di dalam website owasp juice shop. Dimana saya merubah status intercept yang tadinya off menjadi on.
 
