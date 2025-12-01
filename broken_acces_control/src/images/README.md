@@ -14,31 +14,31 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 1. Setelah melakukan pengaksesan localhost 3000 di terminal dan mempersiapkan aplikasi burpsuite di sini, saya melakukan login dengan menggunakan akun yang sudah di daftarkan sebelumnya.           
 
-![login.png](Image/login.png)
+![login.png](login.png)
 
 2. Kemudian setelah melakukan proses login disini akan di arahkan ke halaman dashboard untuk dapat memilih beberapa item dan nantinya akan disimpan ke keranjang.
 
-![halaman dashboard.png](Image/halaman%20dashboard.png)
+![halaman dashboard.png](halaman dashboard.png)
  
 3. Kemudian menuju halaman keranjang untuk dapat melihat yang telah ditambahkan yaitu aple juice dan apple pomance masing masing 1 buah.
 
-![halaman keranjang.png](Image/halaman%20keranjang.png)
+![halaman keranjang.png](halaman keranjang.png)
 
 4. Kemudian disini saya membuka halaman proxy di dalam http history untuk melihat track http history. Terdapat informasi host, method, url, status, length dan informasi pendukung lainnya.
 
-![track http history.png](Image/track%20http%20history.png)
+![track http history.png](track http history.png)
 
 5. Kemudian setelah itu saya pilih http history yang memiliki params
  json dengan get /rest/basket/7. Kemudian saya lihat mengenai request
  dan response yang tertampil di halaman tersebut. Dimana response
  berisi informasi isi keranjang yang telah saya pilih sebelumnya.
 
-![params  json dengan get-rest-basket-7.png](Image/params%20%20json%20dengan%20get-rest-basket-7.png) 
+![params  json dengan get-rest-basket-7.png](params json dengan get-rest-basket-7.png) 
 
 6. Kemudian saya pindahkan list request yang saya amati sebelumnya menuju repeater, kemudian saya send dan pada response terlihat data keranjang yang sudah sesuai dengan apa yang diinputkan sebelumnya.
 
-![list request.png](Image/list%20request.png)
-![halaman keranjang.png](Image/halaman%20keranjang.png)
+![list request.png](list request.png)
+![halaman keranjang.png](halaman keranjang.png)
 
 7. Setelah melihat informasi response di repeater, saya mencoba untuk mengganti data id 7 menjadi 2 untuk melihat apakah terdapat perubahan yang ditampilkan response. Dan ternyata response membrikan informasi berbeda dari sebelumnya yang mana ternyata menunjukkan isi keranjang id 2.
 
