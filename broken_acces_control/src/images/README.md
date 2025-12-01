@@ -113,8 +113,8 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 10. Kemudian saya mencoba untuk login menggunakan "admin1123" disini saya berhasil untuk login sebagai admin dan dapat mengakses keranjang serta profile dari akun admin yang ada di dalam owasp juice shop.
 
-![login password.png](login password.png)
-![berhasil login.png](berhasil login.png)
+![login password.png](password.png)
+![berhasil login.png](berhasil.login.png)
 ![terbuka semua keranjang.png](terbuka.png)
 ![masuk ke akun admin.png](masuk ke akun admin.png)
 ![keranjang semuuaa terbuka.png](keranjang semuuaa terbuka.png)
