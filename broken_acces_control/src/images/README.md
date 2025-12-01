@@ -38,7 +38,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 6. Kemudian saya pindahkan list request yang saya amati sebelumnya menuju repeater, kemudian saya send dan pada response terlihat data keranjang yang sudah sesuai dengan apa yang diinputkan sebelumnya.
 
 ![list request.png](request.png)
-![halaman keranjang.png](Image/halaman keranjang.png)
+![halaman keranjang.png](keranjang.png)
 
 7. Setelah melihat informasi response di repeater, saya mencoba untuk mengganti data id 7 menjadi 2 untuk melihat apakah terdapat perubahan yang ditampilkan response. Dan ternyata response membrikan informasi berbeda dari sebelumnya yang mana ternyata menunjukkan isi keranjang id 2.
 
@@ -79,15 +79,15 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 2. Kemudian saya melakukan login dengan menggunakan password dummy, namun sebelumnya saya melakukan perubahan status menjadi on di intercept.
 
-![login password.png](login password.png)
-![login intercept on.png](login intercept on.png)
+![login password.png](password.png)
+![login intercept on.png](on.png)
 3. Ketika melakukan submit login, intercept memberikan informasi berupa baris informasi yang mana memuat email dan password.
-![login password.png](login password.png)
-![login intercept on.png](login intercept on.png)
+![login password.png](password.png)
+![login intercept on.png](on.png)
 4. Kemudian setelah melihat informasi tersebut, saya menggunakan ikon yang dikotaki warna merah untuk melakukan pengiriman menuju intruder, positions.
 
 ![clear.png](clear.png)
-![login password.png](login password.png)
+![login password.png](password.png)
 
 5. Kemudian kita berpindah ke halaman intruder, positions dan melihat data informasi yang ada disana, kemudian klik clear. Ada penambahan beberapa data ketika proses melakukan clear data.
 
@@ -96,8 +96,8 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 6. Kemudian klik add, yang mana dalam hal ini akan membuat data email memiliki tambahan sign dollar didepannya. Hal ini membuat adanya perubahan yang ada.
 
-![klik add.png](klik add.png)
-![login password.png](login password.png)
+![klik add.png](add.png)
+![login password.png](password.png)
 
 7. Proses berikutnya saya menuju ke payloads dan melakukan load data file password.txt yang sebelumnya sudah dibuat.
 
@@ -105,11 +105,11 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 8. Setelah itu kemudian data yang telah digunakan dapat diinputkan pada text akan muncul di dalam kotak putih sebagai list data password, kemudian kita dapat mengklik button start attack.
 
-![list data password.png](list data password.png) 
+![list data password.png](list.png) 
 
 9. Setelah itu, akan tertampil sebuah modal yang menampilkan list password yang dicoba sebelumnya, dan memuat informasi status dan length dan data lain. Disini semua 401 (tidak memiliki autorisasi)  hasilnya kecuali data terakhir "admin123" yang memiliki status 200 (memiliki autorisasi)
 
-![memuat informasi password.png](memuat informasi password.png)
+![memuat informasi password.png](memuat.png)
 
 10. Kemudian saya mencoba untuk login menggunakan "admin1123" disini saya berhasil untuk login sebagai admin dan dapat mengakses keranjang serta profile dari akun admin yang ada di dalam owasp juice shop.
 
