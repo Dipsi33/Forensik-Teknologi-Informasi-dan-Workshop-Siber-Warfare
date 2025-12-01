@@ -46,26 +46,26 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 8. Kemudian disini saya akan menggunakan fitur intercept untuk menampilkan data keranjang user lain di dalam website owasp juice shop. Dimana saya merubah status intercept yang tadinya off menjadi on.
 
-![Intercept off.png](Intercept off.png)
+![Intercept off.png](off.png)
 
 9. Ketika intercept on disini terdapat baris informasi request terkait owasp juice shop. Kemudian saya foorward data tersebut hingga menemukan data get /rest/basket/7, kemudian saya ganti data uiidnya dengan id lain selain id 7 kemudian saya forward kembali informasi tersebut.
 
-![ketika intercept on.png](ketika intercept on.png)
+![ketika intercept on.png](on.png)
 
 10. Website berhasil menampilkan isi keranjang pengguna lainnya berikut adalah isi keranjang pengguna : id (2).
 
-![isi keranjang 2.png](isi keranjang 2.png)
- ![ganti id 7 menjadi id2.png](ganti id 7 menjadi id2.png)
+![isi keranjang 2.png](2.png)
+ ![ganti id 7 menjadi id2.png](id2.png)
 
 11. Website berhasil menampilkan isi keranjang pengguna lainnya berikut adalah isi keranjang pengguna : id (4).
 
-![id 4.png](id 4.png)
-![Keranjang ID 4.png](id 4.png)
+![id 4.png](4.png)
+![Keranjang ID 4.png](4.png)
 
 
 12. Website berhasil menampilkan isi keranjang pengguna lainnya berikut adalah isi keranjang pengguna : id (5).
 
-![id 5.png](id 5.png)
+![id 5.png](5.png)
 
 13. Disini saya sudah berhasil untuk melakukan challenge melihat keranjang orang lain.
 
@@ -75,7 +75,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 1. Disini saya bermaksud ingin mencari data email, yang mana ditemukan di komentar ulasan. Dimana ada informasi email admin disana.
 
- ![mencari email.png](mencari email.png)
+ ![mencari email.png](email.png)
 
 2. Kemudian saya melakukan login dengan menggunakan password dummy, namun sebelumnya saya melakukan perubahan status menjadi on di intercept.
 
