@@ -22,7 +22,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
  
 3. Kemudian menuju halaman keranjang untuk dapat melihat yang telah ditambahkan yaitu aple juice dan apple pomance masing masing 1 buah.
 
-![halaman keranjang.png](halaman.keranjang.png)
+![halaman keranjang.png](halaman keranjang.png)
 
 4. Kemudian disini saya membuka halaman proxy di dalam http history untuk melihat track http history. Terdapat informasi host, method, url, status, length dan informasi pendukung lainnya.
 
@@ -42,30 +42,30 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 7. Setelah melihat informasi response di repeater, saya mencoba untuk mengganti data id 7 menjadi 2 untuk melihat apakah terdapat perubahan yang ditampilkan response. Dan ternyata response membrikan informasi berbeda dari sebelumnya yang mana ternyata menunjukkan isi keranjang id 2.
 
- ![ganti id 7 menjadi id2.png](Image/ganti id 7 menjadi id2.png)
+ ![ganti id 7 menjadi id2.png](ganti id 7 menjadi id2.png)
 
 8. Kemudian disini saya akan menggunakan fitur intercept untuk menampilkan data keranjang user lain di dalam website owasp juice shop. Dimana saya merubah status intercept yang tadinya off menjadi on.
 
-![Intercept off.png](Image/Intercept off.png)
+![Intercept off.png](Intercept off.png)
 
 9. Ketika intercept on disini terdapat baris informasi request terkait owasp juice shop. Kemudian saya foorward data tersebut hingga menemukan data get /rest/basket/7, kemudian saya ganti data uiidnya dengan id lain selain id 7 kemudian saya forward kembali informasi tersebut.
 
-![ketika intercept on.png](Image/ketika intercept on.png)
+![ketika intercept on.png](ketika intercept on.png)
 
 10. Website berhasil menampilkan isi keranjang pengguna lainnya berikut adalah isi keranjang pengguna : id (2).
 
-![isi keranjang 2.png](Image/isi keranjang 2.png)
- ![ganti id 7 menjadi id2.png](Image/ganti id 7 menjadi id2.png)
+![isi keranjang 2.png](isi keranjang 2.png)
+ ![ganti id 7 menjadi id2.png](ganti id 7 menjadi id2.png)
 
 11. Website berhasil menampilkan isi keranjang pengguna lainnya berikut adalah isi keranjang pengguna : id (4).
 
-![id 4.png](Image/id 4.png)
-![Keranjang ID 4.png](Image/id 4.png)
+![id 4.png](id 4.png)
+![Keranjang ID 4.png](id 4.png)
 
 
 12. Website berhasil menampilkan isi keranjang pengguna lainnya berikut adalah isi keranjang pengguna : id (5).
 
-![id 5.png](Image/id 5.png)
+![id 5.png](id 5.png)
 
 13. Disini saya sudah berhasil untuk melakukan challenge melihat keranjang orang lain.
 
@@ -75,49 +75,49 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 
 1. Disini saya bermaksud ingin mencari data email, yang mana ditemukan di komentar ulasan. Dimana ada informasi email admin disana.
 
- ![mencari email.png](Image/mencari email.png)
+ ![mencari email.png](mencari email.png)
 
 2. Kemudian saya melakukan login dengan menggunakan password dummy, namun sebelumnya saya melakukan perubahan status menjadi on di intercept.
 
-![login password.png](Image/login password.png)
-![login intercept on.png](Image/login intercept on.png)
+![login password.png](login password.png)
+![login intercept on.png](login intercept on.png)
 3. Ketika melakukan submit login, intercept memberikan informasi berupa baris informasi yang mana memuat email dan password.
-![login password.png](Image/login password.png)
-![login intercept on.png](Image/login intercept on.png)
+![login password.png](login password.png)
+![login intercept on.png](login intercept on.png)
 4. Kemudian setelah melihat informasi tersebut, saya menggunakan ikon yang dikotaki warna merah untuk melakukan pengiriman menuju intruder, positions.
 
 ![clear.png](clear.png)
-![login password.png](Image/login password.png)
+![login password.png](login password.png)
 
 5. Kemudian kita berpindah ke halaman intruder, positions dan melihat data informasi yang ada disana, kemudian klik clear. Ada penambahan beberapa data ketika proses melakukan clear data.
 
-![password dummy.png](Image/password dummy.png)
-![login password.png](Image/login password.png)
+![password dummy.png](password dummy.png)
+![login password.png](login password.png)
 
 6. Kemudian klik add, yang mana dalam hal ini akan membuat data email memiliki tambahan sign dollar didepannya. Hal ini membuat adanya perubahan yang ada.
 
-![klik add.png](Image/klik add.png)
-![login password.png](Image/login password.png)
+![klik add.png](klik add.png)
+![login password.png](login password.png)
 
 7. Proses berikutnya saya menuju ke payloads dan melakukan load data file password.txt yang sebelumnya sudah dibuat.
 
-![payload.png](Image/payload.png)
+![payload.png](payload.png)
 
 8. Setelah itu kemudian data yang telah digunakan dapat diinputkan pada text akan muncul di dalam kotak putih sebagai list data password, kemudian kita dapat mengklik button start attack.
 
-![list data password.png](Image/list data password.png) 
+![list data password.png](list data password.png) 
 
 9. Setelah itu, akan tertampil sebuah modal yang menampilkan list password yang dicoba sebelumnya, dan memuat informasi status dan length dan data lain. Disini semua 401 (tidak memiliki autorisasi)  hasilnya kecuali data terakhir "admin123" yang memiliki status 200 (memiliki autorisasi)
 
-![memuat informasi password.png](Image/memuat informasi password.png)
+![memuat informasi password.png](memuat informasi password.png)
 
 10. Kemudian saya mencoba untuk login menggunakan "admin1123" disini saya berhasil untuk login sebagai admin dan dapat mengakses keranjang serta profile dari akun admin yang ada di dalam owasp juice shop.
 
-![login password.png](Image/login password.png)
-![berhasil login.png](Image/berhasil login.png)
-![terbuka semua keranjang.png](Image/terbuka semua keranjang.png)
-![masuk ke akun admin.png](Image/masuk ke akun admin.png)
-![keranjang semuuaa terbuka.png](Image/keranjang semuuaa terbuka.png)
+![login password.png](login password.png)
+![berhasil login.png](berhasil login.png)
+![terbuka semua keranjang.png](terbuka semua keranjang.png)
+![masuk ke akun admin.png](masuk ke akun admin.png)
+![keranjang semuuaa terbuka.png](keranjang semuuaa terbuka.png)
 
 ## Kesimpulan
 
