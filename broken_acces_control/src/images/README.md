@@ -116,7 +116,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 ![login password.png](password.png)
 ![berhasil login.png](berhasil.login.png)
 ![terbuka semua keranjang.png](terbuka.png)
-![masuk ke akun admin.png](masuk ke akun admin.png)
+![masuk ke akun admin.png](admin.png)
 ![keranjang semuuaa terbuka.png](semuuaa.png)
 
 ## Kesimpulan
